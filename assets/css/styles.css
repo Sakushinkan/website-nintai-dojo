@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    flex: 1;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+.subheader {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.white {
+    color: white
+}
+
+.grey {
+    color: var(--primary-color);
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.grey-bg {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.nav-button {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.border {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.top-border {
+    padding-top: 2rem;
+    border-top: 1px solid LightGray;
+}
+
+.rotate {
+    animation: rotateImage 0.25s ease-in-out forwards;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.main-logo {
+    height: auto;
+    width: 100%;
+    max-width: 58px;
+}
+
+.icon {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.call-to-action {
+    min-height: 2px;
+    position:fixed;
+    bottom: 100px;
+    width: 100%;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.expiration {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 0.7rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 50%;
+}
+
+.horizontal-line {
+    border-top: 1px solid Gray;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.horizontal-line-w {
+    border-top: 1px solid white;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.partners img {
+    height: 70px;
+}
+
+.contacts {
+    font-size: 0.9rem;
+}
+
+.overflow-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em;
+    line-height: 1.5em;
+  }
